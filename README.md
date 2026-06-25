@@ -65,3 +65,5 @@ Comando sugerido para hostear el backend FastAPI:
 ```bash
 uvicorn app:app --host 0.0.0.0 --port $PORT
 ```
+
+Para Render, este repo incluye `.python-version` con Python 3.11.9. Es importante porque Render puede usar Python 3.14 por defecto y algunas dependencias cientificas, como pandas/scipy/statsmodels, todavia pueden fallar al compilar en esa version.
