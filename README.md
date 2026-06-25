@@ -72,6 +72,8 @@ Archivos que deben subirse al repo:
 
 - `.python-version`
 - `render.yaml`
+- `Dockerfile`
+- `.dockerignore`
 - `app.py`
 - `requirements.txt`
 - `runtime.txt`
@@ -80,3 +82,5 @@ Archivos que deben subirse al repo:
 - `app.js`
 - `bayer-logo.jpg`
 - `README.md`
+
+Si Render sigue usando Python 3.14 aunque exista `PYTHON_VERSION=3.11.9`, crear el servicio como **Docker** usando el `Dockerfile` incluido. Ese archivo fija `python:3.11.9-slim` y evita que pandas intente compilarse con Python 3.14.
