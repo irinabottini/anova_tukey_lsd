@@ -919,6 +919,15 @@ def _run_analysis_job(job_id: str, payload: Dict[str, Any]) -> None:
     except Exception as e:
         _set_job(job_id, status="error", progress=100, message="El análisis terminó con error.", error=str(e))
 
+@app.get("/")
+def root():
+    return {
+        "status": "ok",
+        "message": "ANOVA + Tukey + LSD Fisher API funcionando",
+        "docs": "/docs",
+        "health": "/health"
+    }
+    
 @app.post("/analyze")
 def analyze(
     background_tasks: BackgroundTasks,
