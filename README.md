@@ -67,3 +67,16 @@ uvicorn app:app --host 0.0.0.0 --port $PORT
 ```
 
 Para Render, este repo incluye `.python-version` con Python 3.11.9. Es importante porque Render puede usar Python 3.14 por defecto y algunas dependencias cientificas, como pandas/scipy/statsmodels, todavia pueden fallar al compilar en esa version.
+
+Archivos que deben subirse al repo:
+
+- `.python-version`
+- `render.yaml`
+- `app.py`
+- `requirements.txt`
+- `runtime.txt`
+- `index.html`
+- `styles.css`
+- `app.js`
+- `bayer-logo.jpg`
+- `README.md`
